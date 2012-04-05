@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnyConnectPreferences>
+<DefaultUser>carlos.marin</DefaultUser>
+<DefaultSecondUser></DefaultSecondUser>
+<ClientCertificateThumbprint></ClientCertificateThumbprint>
+<ServerCertificateThumbprint>F3B7F5E72C88114B1B7C9A1185AD56FE6C8C7A87</ServerCertificateThumbprint>
+<DefaultHost>vpn1.dfw1.rackspace.com</DefaultHost>
+<DefaultDomain></DefaultDomain>
+<DefaultGroup></DefaultGroup>
+<ProxyHost></ProxyHost>
+<ProxyPort></ProxyPort>
+<SDITokenType>none</SDITokenType>
+<ControllablePreferences></ControllablePreferences>
+</AnyConnectPreferences>

@@ -1,0 +1,32 @@
+alias json="python -mjson.tool"
+alias xml="xmllint --format -"
+
+alias gitinfo='. /Users/$USER/git-info.sh'
+
+alias stc-init="sudo /opt/tomcat/bin/startup.sh && tail -f /opt/tomcat/logs/catalina.out"
+alias stc-debug="sudo /opt/tomcat/bin/startup_debug.sh && tail -f /opt/tomcat/logs/catalina.out"
+alias stc-stop="sudo /opt/tomcat/bin/shutdown.sh && tail -f /opt/tomcat/logs/catalina.out"
+
+
+alias tc5-start="/opt/tomcat5/bin/startup.sh && tail -f /opt/tomcat5/logs/catalina.out"
+alias tc5-debug="/opt/tomcat5/bin/startup_debug.sh && tail -f /opt/tomcat5/logs/catalina.out"
+alias tc5-stop="/opt/tomcat5/bin/shutdown.sh && tail -f /opt/tomcat5/logs/catalina.out"
+alias tail5-auth="tail -f /opt/tomcat5/logs/auth11.log"
+
+alias tc-start="/opt/tomcat/bin/startup.sh && tail -f /opt/tomcat/logs/catalina.out"
+alias tc-debug="/opt/tomcat/bin/startup_debug.sh && tail -f /opt/tomcat/logs/catalina.out"
+alias tc-stop="/opt/tomcat/bin/shutdown.sh && tail -f /opt/tomcat/logs/catalina.out"
+alias tail-auth="tail -f /opt/tomcat/logs/auth11.log"
+
+alias ll="ls -Gla"
+alias rmf="rm -fr"
+
+alias tail-tc="tail -f /opt/tomcat/logs/catalina.out"
+
+alias psfg="ps -fea | grep"
+
+#GoalsJournal
+alias goalsj="java -jar ~/Documents/Dropbox/Writtings/JMyDays/GoalsJournal.jar"
+
+
+
