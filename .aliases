@@ -1,3 +1,6 @@
+alias sudo='sudo '
+#(recognize the space!)
+
 alias json="python -mjson.tool"
 alias xml="xmllint --format -"
 
@@ -16,6 +19,7 @@ alias tail5-auth="tail -f /opt/tomcat5/logs/auth11.log"
 alias tc-start="/opt/tomcat/bin/startup.sh && tail -f /opt/tomcat/logs/catalina.out"
 alias tc-debug="/opt/tomcat/bin/startup_debug.sh && tail -f /opt/tomcat/logs/catalina.out"
 alias tc-stop="/opt/tomcat/bin/shutdown.sh && tail -f /opt/tomcat/logs/catalina.out"
+alias tc-stopf="/opt/tomcat/bin/shutdown-force.sh && tail -f /opt/tomcat/logs/catalina.out"
 alias tail-auth="tail -f /opt/tomcat/logs/auth11.log"
 
 alias ll="ls -Gla"
@@ -27,6 +31,11 @@ alias psfg="ps -fea | grep"
 
 #GoalsJournal
 alias goalsj="java -jar ~/Documents/Dropbox/Writtings/JMyDays/GoalsJournal.jar"
+alias goalsj-delay="java -jar ~/Documents/Dropbox/Writtings/JMyDays/GoalsJournal.jar startDelay=120"
 
+alias mvn-cis="mvn clean install -Dmaven.test.skip=true -Dcobertura.skip=true -o"
 
-
+alias mvn-ci="mvn clean install"
+alias vi-auth="vim /etc/auth/auth.properties"
+alias vi-auth11="vim /etc/auth/auth.v1.1.properties"
+alias vi-auth20="vim /etc/auth/auth.v2.0.properties"

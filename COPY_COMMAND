@@ -1,1 +1,4 @@
-cp .aliases .anyconnect .bash_profile .bash_profile_back .bash_prompt .bashrc .exports .functions .gitconfig .gitignore .gvimrc .osx .profile .viminfo .vimrc Documents/Dropbox/dotfiles/carlosMarin/
+#cp .aliases .anyconnect .bash_profile .bash_profile_back .bash_prompt .bashrc .exports .functions .gitconfig .gitignore .gvimrc .osx .profile .viminfo .vimrc Documents/Dropbox/dotfiles/carlosMarin/
+
+cp .aliases .bash_profile _.bash_prompt .bashrc .exports .functions .gitconfig .gitignore .gvimrc .osx .profile .viminfo .vimrc ~/dropbox/dotfiles/dotfiles-osx
+
