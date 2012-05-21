@@ -1,1 +1,4 @@
 My dotfiles :)
+
+bootstrap:
+$ sh .osx
