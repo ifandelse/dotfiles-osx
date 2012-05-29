@@ -9,3 +9,23 @@ Thumbs.db
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
+
+#IDE configs
+.classpath
+.project
+.settings
+/*.launch
+/*.tmproj
+
+#Idea
+*.iml
+.idea/
+
+#Maven
+target/
+
+stacktrace.log
+
+# project release file
+*.war
+
