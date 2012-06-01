@@ -1,6 +1,7 @@
 [user]
-    name = 
-    email = 
+    name = Carlos Marin
+    #email = ing.cma@gmail.com 
+    email = carlos.marin@rackspace.com
 
 [alias]
     vimdiff = difftool -y -t vimdiff
@@ -15,43 +16,45 @@
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
     ls = ls-files
+    ps = push
+    pl = pull
 
-	# View the SHA, description, and history graph of the latest 20 commits
-	l = log --pretty=oneline -n 20 --graph
-	# View the current working tree status using the short format
-	s = status -s
-	# Diff
-	d = diff --patch-with-stat
-	# Pull in remote changes for the current repository and all its submodules
-	p = !"git pull; git submodule foreach git pull origin master"
-	# Clone a repository including all submodules
-	c = clone --recursive
-	# Commit all changes
-	ca = commit -a
-	# Switch to a branch, creating it if necessary
-	go = checkout -B
-	# Undo a `git push`
-	undopush = push -f origin HEAD^:master
+    # View the SHA, description, and history graph of the latest 20 commits
+    l = log --pretty=oneline -n 20 --graph
+    # View the current working tree status using the short format
+    s = status -s
+    # Diff
+    d = diff --patch-with-stat
+    # Pull in remote changes for the current repository and all its submodules
+    p = !"git pull; git submodule foreach git pull origin master"
+    # Clone a repository including all submodules
+    c = clone --recursive
+    # Commit all changes
+    ca = commit -a
+    # Switch to a branch, creating it if necessary
+    go = checkout -B
+    # Undo a `git push`
+    undopush = push -f origin HEAD^:master
 
     # Show files ignored by git:
     ign = ls-files -o -i --exclude-standard
 
-    review = !sh /tools/rfc.sh
+    review = !sh tools/rfc.sh
     #review = !sh /Users/carlos.marin/keystone/tools/rfc.sh
     #review = !sh /Users/carlos.marin/workspace_alternate/identity-api/tools/rfc.sh
 
 [apply]
-	# Detect whitespace errors when applying a patch
-	whitespace = fix
+    # Detect whitespace errors when applying a patch
+    whitespace = fix
 
 [color "status"]
-	added = yellow
-	changed = green
-	untracked = cyan
+    added = yellow
+    changed = green
+    untracked = cyan
 [color]
-	diff = always
-	# Use colors in Git commands that are capable of colored output when outputting to the terminal
-	ui = auto
+    #diff = always
+    # Use colors in Git commands that are capable of colored output when outputting to the terminal
+    ui = auto
 
 [color "branch"]
     current = yellow reverse
@@ -71,31 +74,31 @@
     untracked = cyan
 
 [core]
-	# Use custom `.gitignore` and `.gitattributes`
-	excludesfile = ~/.gitignore
-	attributesfile = ~/.gitattributes
-	# Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
-	whitespace = fix,space-before-tab,indent-with-non-tab,trailing-space,cr-at-eol
+    # Use custom `.gitignore` and `.gitattributes`
+    excludesfile = ~/.gitignore
+    attributesfile = ~/.gitattributes
+    # Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
+    whitespace = fix,space-before-tab,indent-with-non-tab,trailing-space,cr-at-eol
 
 [merge]
-	# Include summaries of merged commits in newly created merge commit messages
-	log = true
+    # Include summaries of merged commits in newly created merge commit messages
+    log = true
 
 # Use `origin` as the default remote on the `master` branch in all cases
 [branch "master"]
-	remote = origin
-	merge = refs/heads/master
+    remote = origin
+    merge = refs/heads/master
 
 # URL shorthands
 [url "git@github.com:"]
-	insteadOf = "gh:"
-	pushInsteadOf = "github:"
-	pushInsteadOf = "git://github.com/"
+    insteadOf = "gh:"
+    pushInsteadOf = "github:"
+    pushInsteadOf = "git://github.com/"
 [url "git://github.com/"]
-	insteadOf = "github:"
+    insteadOf = "github:"
 [url "git@gist.github.com:"]
-	insteadOf = "gst:"
-	pushInsteadOf = "gist:"
-	pushInsteadOf = "git://gist.github.com/"
+    insteadOf = "gst:"
+    pushInsteadOf = "gist:"
+    pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
-	insteadOf = "gist:"
+    insteadOf = "gist:"
